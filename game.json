@@ -1,0 +1,85 @@
+{
+	"DCELL": {
+		"name": "Dungeon Cell",
+		"desc": "You awake in a cell. It's very dark. Get used to it.",
+		"exits": [
+			{
+				"exit": "NORTH",
+				"target": "ODCELL"
+			}
+		]
+	}
+	,"ODCELL": {
+		"name": "Outside Dungeon Cell",
+		"desc": "Congrats! You're outside. The cell. Not the Dungeon. Good luck with that.",
+		"exits": [
+			{
+				"exit": "WEST",
+				"target": "FROOM"
+			}, {
+                "exit": "NORTH",
+                "target": "EDROOM"
+            }
+		]
+    }
+    ,"FROOM": {
+        "name": "Fire Room",
+        "desc": "It's a room full of fire. How are you looking at the room? You're dead. (Please type quit)",
+        "exits": []
+    }
+    ,"EDROOM": {
+        "name": "Empty Dungeon Room",
+        "desc": "It's an empty room. You feel kind of disappointed considering you're in a dungeon.",
+        "exits": [
+            {
+                "exit": "WEST",
+                "target": "BOTPIT"
+            }, {
+                "exit": "NORTH",
+                "target": "GROOM"
+            }, {
+                "exit": "SOUTH",
+                "target": "ODCELL"
+            }
+        ]
+    }
+    ,"BOTPIT": {
+        "name": "Bottomless Pit",
+        "desc": "You've fallen into a bottomless pit. Maybe watch your step next time...? (Please type quit)",
+        "exits": []
+    }
+    ,"GROOM": {
+        "name": "Goblin Room",
+        "desc": "It's an empty room with a Goblin in it. He's friendly, and offers you a cookie.",
+        "exits": [
+            {
+                "exit": "EAST",
+                "target": "EXIT"
+            }, {
+                "exit": "NORTH",
+                "target": "DRAGON"
+            }, {
+                "exit": "SOUTH",
+                "target": "EDROOM"
+            }, {
+                "exit": "WEST",
+                "target": "AROOM"
+            }
+        ]
+    }
+    ,"DRAGON": {
+        "name": "Dragon Room",
+        "desc": "Yep. That's a dragon. Aaaand this is the inside of a dragon. You've been eaten. (Please type quit)",
+        "exits": []
+    }
+    ,"EXIT": {
+        "name": "The Exit!",
+        "desc": "It's the Exit. That wasn't so hard, was it? (Please type quit)",
+        "exits": []
+    }
+    ,"AROOM": {
+        "name": "Table Room",
+        "desc": "There's a nondescript vial on the table, with a note that reads \"Drink Me.\" You drink it, and immediately die. It's a dungeon, what did you expect? (Please type quit)",
+        "exits": []
+    }
+}

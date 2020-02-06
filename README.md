@@ -1,2 +1,2 @@
 # 02-Text-adventure
-Creating a text adventure game in Python.
+This repository is a game where the player escapes from a dungeon. They can type north, west, east, or south to navigate the dungeon and attempt to escape. Most rooms will kill the player. When you get to the exit, you win. Dying or winning will require the player to quit the game.
